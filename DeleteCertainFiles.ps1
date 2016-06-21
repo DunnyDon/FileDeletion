@@ -82,7 +82,6 @@ If ($TempSourceFoldersDepth -ne $Null)
 for($i=($SourceFolders.count-1); $i -ge 0; $i--)
 {
   $Folder=$SourceFolders[$i]
-  $TempArchiveDir=$Folder.Replace($SourceDir,$ArchiveDir)
   delete-files $Folder
 }
 
